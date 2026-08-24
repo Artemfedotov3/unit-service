@@ -42,4 +42,9 @@ public class UpgradeController {
         upgradeService.deleteUpgrade(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/api/v1/upgrade/by-unit/{unitId}")
+    public ResponseEntity<List<UpgradeResponseDto>> getUpgradesByUnitId(@PathVariable Long unitId) {
+        return ResponseEntity.ok(upgradeService.getUpgradeByUnitId(unitId));
+    }
 }
