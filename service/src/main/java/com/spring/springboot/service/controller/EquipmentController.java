@@ -44,7 +44,7 @@ public class EquipmentController {
         return ResponseEntity.noContent().build();
     }
 
-    @GetMapping("/unit/{unitId}")
+    @GetMapping("/api/v1/equipment/unit/{unitId}")
     public ResponseEntity<List<EquipmentResponseDto>> getEquipmentByUnitId(@PathVariable Long unitId){
         return ResponseEntity.ok(equipmentService.getEquipmentByUnitId(unitId));
     }

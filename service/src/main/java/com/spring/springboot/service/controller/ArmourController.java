@@ -44,7 +44,7 @@ public class ArmourController {
         return ResponseEntity.noContent().build();
     }
 
-    @GetMapping("/by-unit/{unitId}")
+    @GetMapping("/api/v1/armour/by-unit/{unitId}")
     public ResponseEntity<List<ArmourResponseDto>> getArmourByUnitId(@PathVariable Long unitId) {
         return ResponseEntity.ok(armourService.getArmourByUnitId(unitId));
     }
