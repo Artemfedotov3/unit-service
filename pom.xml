@@ -13,10 +13,10 @@
     </parent>
 
     <groupId>com.spring.springboot</groupId>
-    <artifactId>Practice2</artifactId>
+    <artifactId>Practice_3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Practice2</name>
+    <name>Practice_3</name>
 
     <modules>
         <module>api</module>

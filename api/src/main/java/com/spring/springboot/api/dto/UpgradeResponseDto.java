@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Schema(description = "DTO with upgrate data")
+@Schema(description = "DTO with upgrade data")
 public class UpgradeResponseDto {
 
     private Long id;
